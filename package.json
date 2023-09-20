@@ -1,23 +1,23 @@
 {
-  "name": "wedding-website",
+  "name": "academia-diballu",
   "version": "1.0.1",
-  "description": "A wedding website with loads of features.",
+  "description": "academia de danza y baile",
   "main": "npmfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:rampatra/wedding-website.git"
+    "url": "git+ssh://git@github.com/Guerra-666/Di_Ballu_Academy"
   },
   "keywords": [
-    "wedding",
-    "template",
-    "website template"
+    "baile",
+    "danza",
+    "academia danza"
   ],
-  "author": "Ram Patra",
+  "author": "Adrian Guerra",
   "license": "GPL-3.0",
-  "homepage": "https://github.com/rampatra/wedding-website",
+  "homepage": "https://github.com/Guerra-666/Di_Ballu_Academy",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-rename": "^1.4.0",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
+    "bootstrap": "^3.4.1",
     "font-awesome": "^4.7.0",
     "waypoints": "^4.0.1"
   }
