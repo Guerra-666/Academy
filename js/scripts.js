@@ -212,13 +212,15 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Solo un segundo!</strong> Estamos guardando tus datos de contacto :)'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        var inviteCode = $('#invite_code').val();
+        if (inviteCode.length < 10) {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Lo siento!</strong> Tu número de telefono es inválido.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwhi0nw5ulZLregn80g53lwWObouKXtbYj65eeDsWG7fPhXxlSx1jK-P9q7M7fWD7tQOg/exec', data)
+            
+            // https://script.google.com/macros/s/AKfycbyILtnagk26ZznOwFmxSrw8nDczSng1SJYrG-wMuTlTvHGpkdgq-BE4-2Y2Yhq2q2uN6A/exec
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -238,10 +240,10 @@ $(document).ready(function () {
 });
 
 /********************** Extras **********************/
-
+20.082919626493435, -98.73544052364457
 // Google map
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: 20.082919626493435, lng: -98.73544052364457};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: location,
@@ -255,7 +257,7 @@ function initMap() {
 }
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: 20.082919626493435, lng: -98.73544052364457};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,

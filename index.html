@@ -333,6 +333,7 @@ Hemos visto a nuestros estudiantes crecer, brillar en el escenario y abrazar la 
         <h3>¿Cómo puedo llegar?</h3>
         <p>Es más fácil de lo que crees!</p>
     </div>
+    
     <div id="map-canvas"></div>
     <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
@@ -344,10 +345,51 @@ Hemos visto a nuestros estudiantes crecer, brillar en el escenario y abrazar la 
                 </div>
                 <div id="map-content" class="pointer-events-auto">
                     <div class="row">
+                        <!-- <div class="col-md-6">
+                            <h5>Plaza Zeus</h5>
+                            <p>Avenida Zeus 101, San Cristobal Chacón, 42186 Hgo.</p>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h5>Plaza ZEUS</h5>
+                            <p>Avenida Zeus 101, San Cristobal Chacón, 42186 Hgo.</p>
+                        </div> -->
+                        
+                    </div>
+
+                    <div class="row">
+                        <!-- Información 1 -->
+                        <div class="col-md-6">
+                            <h5>Plaza Zeus</h5>
+                            <p>Avenida Zeus 101, San Cristobal Chacón, 42186 Hgo.</p>
+                        </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" href="https://maps.app.goo.gl/hxRRJcoPndMrGq4n7" target="_blank">
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostrar mapa
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- Información 2 -->
                         <div class="col-md-6">
                             <h5>Plaza ZEUS</h5>
                             <p>Avenida Zeus 101, San Cristobal Chacón, 42186 Hgo.</p>
                         </div>
+                        <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-accent btn-small" href="https://maps.app.goo.gl/hxRRJcoPndMrGq4n7" target="_blank">
+                                <i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostrar mapa
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row text-center">
+                        <!-- <div class="col-md-6" style="padding: 5px;">
+                            <a class="btn btn-fill btn-small"
+                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
+                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
+                        </div> -->
                         <div class="col-md-6">
                             <h5>Heidy Guerra Avila</h5>
                             <p><i class="fa fa-mobile"></i> <a href="tel://+527712204060">+52 771 220 4060</a><br>
@@ -356,16 +398,7 @@ Hemos visto a nuestros estudiantes crecer, brillar en el escenario y abrazar la 
                             <p><i class="fa fa-mobile"></i> <a href="tel://+527711836232">+52 771 183 6232</a><br>
                                 
                         </div>
-                    </div>
-                    <div class="row text-center">
-                        <!-- <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-fill btn-small"
-                               href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                        </div> -->
-                        <div class="col-md-6" style="padding: 5px;">
-                            <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Mostrar mapa</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -426,7 +459,7 @@ Hemos visto a nuestros estudiantes crecer, brillar en el escenario y abrazar la 
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                <i class="fa fa-phone" aria-hidden="true"></i><input type="number" name="num_tel" id="num_tel"
                                                                 class="" min="0"
                                                                 placeholder="Numero Telefonico"
                                                                 required>
